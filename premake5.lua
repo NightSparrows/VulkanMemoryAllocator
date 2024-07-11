@@ -6,7 +6,8 @@ project "VulkanMemoryAllocator"
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 
 	includedirs {
-		"%{IncludeDir.VulkanSDK}"
+		"%{IncludeDir.VulkanSDK}",
+		"include"
 	}
 
 	files {
